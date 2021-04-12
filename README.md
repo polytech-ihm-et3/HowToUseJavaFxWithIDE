@@ -32,8 +32,7 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 1.5. Une fois l'installation terminez, acceptez les conditions d'utilisations.
 
-> ![](images/eclipse_step1.7.jpg)  |  ![](images/eclipse_step1.8.jpg)
-> <br><div align="center"><img src="images/eclipse_step1.7.jpg"></img><img src="images/eclipse_step1.8.jpg"></img></div><br>
+> <br><div align="center"><img src="images/eclipse_step1.7.jpg" width="200"></img><img src="images/eclipse_step1.8.jpg" width="200"></img></div><br>
 
 1.6. Finalement, redémarrez Eclipse.
 
