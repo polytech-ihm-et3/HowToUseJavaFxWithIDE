@@ -6,9 +6,9 @@ ___
 
 Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou IntelliJ. Je précise qu'ici, l'ordinateur est configuré en anglais, donc bien évidemment, les commandes seront peut-être en français pour certains d'entre vous.
 
-# Comment obtenir JavaFx sous Eclipse ?
+# Comment utiliser JavaFX sous Eclipse ?
 
-1. Installation du Plugin *e(fx)clipse* :
+1. **Installation du Plugin *e(fx)clipse* :**
 
 1.1. Connectez-vous au [MarketPlace de Eclipse](https://marketplace.eclipse.org/) et chercher *e(fx)clipse*.
 
@@ -32,13 +32,14 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 1.5. Une fois l'installation terminez, acceptez les conditions d'utilisations.
 
-> <br><div align="center"><img src="images/eclipse_step1.7.jpg"></img><img src="images/eclipse_step1.8.jpg"></img></div><br>
+> <br><div align="center"><img src="images/eclipse_step1.7.jpg"></img></div><br>
+> <br><div align="center"><img src="images/eclipse_step1.8.jpg"></img></div><br>
 
 1.6. Finalement, redémarrez Eclipse.
 
 > <br><div align="center"><img src="images/eclipse_step1.9.jpg"></img></div><br>
 
-2. Changement de plateforme :
+2. **Changement de plateforme :**
 
 2.1. Allez dans les préférences d'Eclipse (*Window* > *Preferences*).
 
@@ -76,7 +77,7 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 > <br><div align="center"><img src="images/eclipse_step2.9.jpg"></img></div><br>
 
-3. Installation d'un JRE (Java Runtime Environment) approprié :
+3. **Installation d'un JRE (Java Runtime Environment) approprié :**
 
 3.1. Rendez-vous sur le site (https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html)[https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html] pour télécharger une version récente du JRE 8. Choisissez la version qui convient pour votre ordinateur.
 
@@ -98,7 +99,7 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 > <br><div align="center"><img src="images/eclipse_step3.5.jpg"></img></div><br>
 
-4. Enregistrement d'un nouveau JRE dans Eclipse.
+4. **Enregistrement d'un nouveau JRE dans Eclipse :**
 
 4.1. Retournez dans les préférences de Eclipse (*Window* > *Preferences*).
 
@@ -120,6 +121,22 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 > <br><div align="center"><img src="images/eclipse_step4.5.jpg"></img></div><br>
 
-5. Création d'un nouveau projet avec JavaFx :
+5. **Création d'un nouveau projet avec JavaFx :**
 
-5.1. 
+5.1. Démarrez un nouveau projet (*File* > *New* > *Project...*).
+
+> <br><div align="center"><img src="images/eclipse_step5.1.jpg"></img></div><br>
+
+5.2. Sélectionnez *JavaFX*, puis *JavaFX Project* et cliquez sur *Next >*.
+
+> <br><div align="center"><img src="images/eclipse_step5.2.jpg"></img></div><br>
+
+5.3. Choisissez un nom pour votre projet. Cochez *Use a project specific JRE* puis selectionnez la version de JRE récemment installée. Finalement, cliquez sur *Finish*.
+
+> <br><div align="center"><img src="images/eclipse_step5.3.jpg"></img></div><br>
+
+5.4. Votre projet JavaFX devrez fonctionner correctement, sans erreurs :trophy: :trophy: :trophy:
+
+> <br><div align="center"><img src="images/eclipse_step5.4.jpg"></img></div><br>
+
+# Comment utiliser JavaFX sous IntelliJ ?
