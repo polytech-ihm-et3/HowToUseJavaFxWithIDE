@@ -61,7 +61,7 @@ Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je préci
 
 > <br><div align="center"><img src="images/eclipse_step2.5.jpg"></img></div><br>
 
-2.6. Dans *Work with:* entrez "(http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site)[http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site]". Cochez *Target Platform Features*. Plus bas, décochez *Include required software* et validez en cliquant sur *Finish*.
+2.6. Dans *Work with:* entrez "[http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site](http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site)". Cochez *Target Platform Features*. Plus bas, décochez *Include required software* et validez en cliquant sur *Finish*.
 
 > <br><div align="center"><img src="images/eclipse_step2.6.jpg"></img></div><br>
 
@@ -79,7 +79,7 @@ Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je préci
 
 3. **Installation d'un JRE (Java Runtime Environment) approprié :**
 
-3.1. Rendez-vous sur le site (https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html)[https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html] pour télécharger une version récente du JRE 8. Choisissez la version qui convient pour votre ordinateur.
+3.1. Rendez-vous sur le site d'[Oracle pour télécharger une version récente du JRE 8](https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html). Choisissez la version qui convient pour votre ordinateur.
 
 > <br><div align="center"><img src="images/eclipse_step3.1.jpg"></img></div><br>
 
@@ -105,7 +105,7 @@ Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je préci
 
 > <br><div align="center"><img src="images/eclipse_step4.1.jpg"></img></div><br>
 
-4.2. Allez dans *Installed JREs*et cliquez sur *Add ...*.
+4.2. Allez dans *Installed JREs* et cliquez sur *Add ...*.
 
 > <br><div align="center"><img src="images/eclipse_step4.2.jpg"></img></div><br>
 
@@ -145,38 +145,38 @@ Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je préci
 
 1.1. Allez dans les paramètres de IntelliJ (*File* > *Settings...*).
 
-> <br><div align="center"><img src="images/eclipse_step1.1.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step1.1.jpg"></img></div><br>
 
 1.2. Sélectionnez *Plugin* et vérifiez que *JavaFX* est bien coché dans les plugins installés. Si oui, fermez la fenêtre et passez à l'étape suivante, sinon, cochez la case correspondante et redémmarez IntelliJ.
 
-> <br><div align="center"><img src="images/eclipse_step1.2.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step1.2.jpg"></img></div><br>
 
 2. **Installer un JDK approprié et démarrer un nouveau projet :**
 
 2.1. Commencez un nouveau projet (*File* > *New* > *Projet...*).
 
-> <br><div align="center"><img src="images/eclipse_step2.1.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.1.jpg"></img></div><br>
 
 2.2. Sélectionnez *javaFX* sur la gauche. Dans *Project SDK:* Sélectionnez "Download JDK..."
 
-> <br><div align="center"><img src="images/eclipse_step2.2.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.2.jpg"></img></div><br>
 
 2.3. Une nouvelle fenêtre s'affiche. Choisissez la version "1.8", sélectionnez un vendeur et cliquez sur *Download*.
 
-> <br><div align="center"><img src="images/eclipse_step2.3.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.3.jpg"></img></div><br>
 
 2.4. Patientez le temps de l'installation. Vous pouvez la suivre en bas à droite de la fenêtre d'IntelliJ.
 
-> <br><div align="center"><img src="images/eclipse_step2.4.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.4.jpg"></img></div><br>
 
 2.5. Quand l'installation est terminée, cliquez sur *Next*.
 
-> <br><div align="center"><img src="images/eclipse_step2.5.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.5.jpg"></img></div><br>
 
 2.6. Nommez votre nouveau projet et cliquez sur *Finish*.
 
-> <br><div align="center"><img src="images/eclipse_step2.6.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.6.jpg"></img></div><br>
 
 2.7. Votre projet JavaFX devrait fonctionner correctement, sans erreurs :trophy: :trophy: :trophy: (Quand vous créerez un nouveau projet, vous pourrez simplement sélectionner le JDK 1.8 déjà installé)
 
-> <br><div align="center"><img src="images/eclipse_step2.7.jpg"></img></div><br>
+> <br><div align="center"><img src="images/intellij_step2.7.jpg"></img></div><br>
