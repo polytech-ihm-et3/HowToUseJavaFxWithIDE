@@ -135,8 +135,48 @@ Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou Int
 
 > <br><div align="center"><img src="images/eclipse_step5.3.jpg"></img></div><br>
 
-5.4. Votre projet JavaFX devrez fonctionner correctement, sans erreurs :trophy: :trophy: :trophy:
+5.4. Votre projet JavaFX devrait fonctionner correctement, sans erreurs :trophy: :trophy: :trophy:
 
 > <br><div align="center"><img src="images/eclipse_step5.4.jpg"></img></div><br>
 
 # Comment utiliser JavaFX sous IntelliJ ?
+
+1. Vérifier 
+
+1.1. Allez dans les paramètres de IntelliJ (*File* > *Settings...*).
+
+> <br><div align="center"><img src="images/eclipse_step1.1.jpg"></img></div><br>
+
+1.2. Sélectionnez *Plugin* et vérifiez que *JavaFX* est bien coché dans les plugins installés. Si oui, fermez la fenêtre et passez à l'étape suivante, sinon, cochez la case correspondante et redémmarez IntelliJ.
+
+> <br><div align="center"><img src="images/eclipse_step1.2.jpg"></img></div><br>
+
+2. **Installer un JDK approprié et démarrer un nouveau projet :**
+
+2.1. Commencez un nouveau projet (*File* > *New* > *Projet...*).
+
+> <br><div align="center"><img src="images/eclipse_step2.1.jpg"></img></div><br>
+
+2.2. Sélectionnez *javaFX* sur la gauche. Dans *Project SDK:* Sélectionnez "Download JDK..."
+
+> <br><div align="center"><img src="images/eclipse_step2.2.jpg"></img></div><br>
+
+2.3. Une nouvelle fenêtre s'affiche. Choisissez la version "1.8", sélectionnez un vendeur et cliquez sur *Download*.
+
+> <br><div align="center"><img src="images/eclipse_step2.3.jpg"></img></div><br>
+
+2.4. Patientez le temps de l'installation. Vous pouvez la suivre en bas à droite de la fenêtre d'IntelliJ.
+
+> <br><div align="center"><img src="images/eclipse_step2.4.jpg"></img></div><br>
+
+2.5. Quand l'installation est terminée, cliquez sur *Next*.
+
+> <br><div align="center"><img src="images/eclipse_step2.5.jpg"></img></div><br>
+
+2.6. Nommez votre nouveau projet et cliquez sur *Finish*.
+
+> <br><div align="center"><img src="images/eclipse_step2.6.jpg"></img></div><br>
+
+2.7. Votre projet JavaFX devrait fonctionner correctement, sans erreurs :trophy: :trophy: :trophy: (Quand vous créerez un nouveau projet, vous pourrez simplement sélectionner le JDK 1.8 déjà installé)
+
+> <br><div align="center"><img src="images/eclipse_step2.7.jpg"></img></div><br>
