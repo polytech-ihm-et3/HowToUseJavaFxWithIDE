@@ -4,7 +4,7 @@ Polytech Paris-Saclay | 2020-21
 
 ___
 
-Voici un petit tutoriel pour mettre en place un projet Github sur Eclipse ou IntelliJ. Je précise qu'ici, l'ordinateur est configuré en anglais, donc bien évidemment, les commandes seront peut-être en français pour certains d'entre vous.
+Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je précise qu'ici, l'ordinateur est configuré en anglais, donc bien évidemment, les commandes seront peut-être en français pour certains d'entre vous.
 
 # Comment utiliser JavaFX sous Eclipse ?
 
