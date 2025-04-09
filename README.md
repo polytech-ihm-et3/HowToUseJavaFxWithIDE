@@ -1,182 +1,110 @@
 Programmation Java @ Et3
 <br>
-Polytech Paris-Saclay | 2020-21
+Polytech Paris-Saclay | 2045-25
 
 ___
 
-Voici un petit tutoriel pour utiliser JavaFX avec Eclipse ou IntelliJ. Je précise qu'ici, l'ordinateur est configuré en anglais, donc bien évidemment, les commandes seront peut-être en français pour certains d'entre vous.
+# Configuration d'un IDE pour le TP1
 
-# Comment utiliser JavaFX sous Eclipse ?
+Instructions pour configurer IntelliJ ou VSCode pour programmer avec JavaFX.
 
-1. **Installation du Plugin *e(fx)clipse* :**
+-------
 
-1.1. Connectez-vous au [MarketPlace de Eclipse](https://marketplace.eclipse.org/) et chercher *e(fx)clipse*.
+## Configuration d'IntelliJ
 
-> <br><div align="center"><img src="images/eclipse_step1.1.jpg"></img></div><br>
->
-> <br><div align="center"><img src="images/eclipse_step1.2.jpg"></img></div><br>
+### A. Téléchargement du projet.
+1. Faites *New* -> *Project from version control*.
 
-1.2. Pour intégrer ce plugin à Eclipse, il faut glisser et déposer le bouton *Install* dans Eclipse.
+2. Renseignez 
+- *URL* : l'adresse de ce repo git : https://github.com/kunchtler/TP1-squelette
+- *Directory* : le répertoire où se situera le projet sur votre machine.
 
-> <br><div align="center"><img src="images/eclipse_step1.3.jpg"></img></div><br>
-> 
-> <br><div align="center"><img src="images/eclipse_step1.4.jpg"></img></div><br>
+3. Faites *Clone*.
 
-1.3. Une fenêtre de confirmation apparaîtra alors. Veillez à sélectionner *e(fx)clipse* et confirmez.
+### B. Configuration / Installation de la version de Java à utiliser.
+1. Allez dans *File* -> *Project Structure*.
 
-> <br><div align="center"><img src="images/eclipse_step1.5.jpg"></img></div><br>
+2. Renseignez :
+- *SDK* avec une version de Java (au moins 17, au plus 21) qui est sur votre machine.
+    Si aucune version de Java ne vous est proposé, faites *Download JDK*, sélectionnez comme *Version* 21, puis faites *Download*.  
 
-1.4. Patientez pendant l'installation.
+3. Faites *Apply*, puis *OK*.
 
-> <br><div align="center"><img src="images/eclipse_step1.6.jpg"></img></div><br>
+### C. Configuration de l'outil de compilation Maven.
 
-1.5. Une fois l'installation terminez, acceptez les conditions d'utilisations.
+1. Identifiez un fichier appelé "pom.xml" et faites clic droit dessus, et faites dans *Maven* -> *Reload project*.
 
-> <br><div align="center"><img src="images/eclipse_step1.7.jpg"></img></div><br>
-> <br><div align="center"><img src="images/eclipse_step1.8.jpg"></img></div><br>
+2. Cliquez sur *Current File* en haut de l'écran, et faites *Edit configurations*.
 
-1.6. Finalement, redémarrez Eclipse.
+3. Cliquez sur *Add new run configuration...* -> *Application*.
 
-> <br><div align="center"><img src="images/eclipse_step1.9.jpg"></img></div><br>
+4. Il y a un encadré rouge où est écrit *Main class*. Cliquez sur l'icône à droite de cet encadré, puis faites *OK*.
 
-2. **Changement de plateforme :**
+5. Faites *OK*.
 
-2.1. Allez dans les préférences d'Eclipse (*Window* > *Preferences*).
+### D. Execution du projet.
 
-> <br><div align="center"><img src="images/eclipse_step2.1.jpg"></img></div><br>
+Félicitations, vous devriez avoir mis en place IntelliJ pour utiliser ce projet.
 
-2.2. Sélectionnez *Plug-in Development* > *Target Platform* et ciquez sur *Add ...* pour en ajouter une nouvelle.
+Essayez de cliquer sur l'icône Play en haut de l'écran pour vérifier qu'une fenêtre (vide) s'affiche bien.
 
-> <br><div align="center"><img src="images/eclipse_step2.2.jpg"></img></div><br>
+----------------------
 
-2.3. Sélectionnez "Nothing: start with an empty target definition" et validez en cliquant sur *Next >*.
+## Configuration de VSCode
 
-> <br><div align="center"><img src="images/eclipse_step2.3.jpg"></img></div><br>
+### A. Téléchargement du projet.
 
-2.4. Dans *name*, indiquez "e(fx)clipse" et cliquez sur *Add ...*.
+Procurez vous le repo git à cet adresse : https://github.com/kunchtler/TP1-squelette
+- ou bien en utilisant git si vous savez faire.
+- ou bien en cliquant sur l'onglet vert *<> Code*, puis en faisant *Download ZIP*. Décompressez l'archive obtenue sur votre machine.
 
-> <br><div align="center"><img src="images/eclipse_step2.4.jpg"></img></div><br>
+### B. Installation de l'outil de compilation Maven (à ne faire qu'une fois).
+- Sous Windows
+    
+    (Suivre ceci : https://maven.apache.org/install.html)
+    
+    En résumé : 
 
-2.5. Sélectionnez "Software Site" et cliquez sur *Next >*.
+    1. Téléchargez l'archive "apache-maven-3.9.9-bin.zip" disponible [ici](https://maven.apache.org/download.cgi). 
 
-> <br><div align="center"><img src="images/eclipse_step2.5.jpg"></img></div><br>
+    2. Extrayez l'archive au bon endroit et ajoutez le chemin d'accès (typiquement `C:\Users\Username\...\apache-maven-3.9.9\bin`) dans la variable d'environement 'Path' (Menu Windows: 'Modifier les variables d'environnement système'>'Variables d'environnement'>'Path'>'Ajouter...').
 
-2.6. Dans *Work with:* entrez "[http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site](http://download.eclipse.org/efxclipse/runtime-released/2.0.0/site)". Cochez *Target Platform Features*. Plus bas, décochez *Include required software* et validez en cliquant sur *Finish*.
+    3. Fermez et rouvrez VSCode. Vérifier l'installation dans le terminal avec la commande : 
+    ``` 
+    mvn -v
+    ```
 
-> <br><div align="center"><img src="images/eclipse_step2.6.jpg"></img></div><br>
+- Sous Linux
 
-2.7. Patientez pendant l'installation.
+    1. Vous pouvez installer Maven via le gestionnaire de paquets de votre distribution Linux. Par exemple, en faisant dans le terminal :
+    ```
+    sudo apt install maven
+    ```
 
-> <br><div align="center"><img src="images/eclipse_step2.7.jpg"></img></div><br>
+    2. Fermez et rouvrez VSCode. Vérifier l'installation dans le terminal avec la commande : 
+    ``` 
+    mvn -v
+    ```
 
-2.8. Cliquez sur *Finish*.
+### C. Configuration de VSCode.
 
-> <br><div align="center"><img src="images/eclipse_step2.8.jpg"></img></div><br>
+1. (A ne faire qu'une fois) Dans VSCode, installez et activez la suite de plugins dédiée à Java : [Extension pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+Vous pouvez l'installer en cliquant sur l'icône avec 4 carrés dans la barre de gauche, et en tapant dans le champ de recherche des extensions : *Extension pack for Java*.
 
-2.9. Vérifiez que la nouvelle plateforme "e(fx)clipse" est bien sélectionnée et cliquez sur *Apply and Close*.
+2. Ouvrez le projet en faisant *File* -> *Open Folder* et en choisissant le dossier où vous avez décompressé le TP.
 
-> <br><div align="center"><img src="images/eclipse_step2.9.jpg"></img></div><br>
+3. Cliquez sur l'icône d'engrenage en bas à gauche de l'écran, et faites *Command Palette*. Tapez et sélectionnez "Java: Configure Java Runtime".
 
-3. **Installation d'un JRE (Java Runtime Environment) approprié :**
+4. Il vous faut choisir dans JDK une version de Java (au moins 17, au plus 21). Si aucune version de Java n'est listée:
+    - Faites *Download a new JDK*
+    - Choisissez la version 21, et faites *Download*. Une fenêtre de navigateur devrait s'ouvrir.
+    - Une fois el téléchargement terminé, décompressez l'archive quelque part sur votre machine.
+    - Revenez à la fenêtre de VSCode où choisir le SDK Java. Faites *Find a new local JDK*, et choisissez le chemin vers le dossier précédemment téléchargé.
 
-3.1. Rendez-vous sur le site d'[Oracle pour télécharger une version récente du JRE 8](https://www.oracle.com/fr/java/technologies/javase-jre8-downloads.html). Choisissez la version qui convient pour votre ordinateur.
+5. Faites *Apply Settings*.
 
-> <br><div align="center"><img src="images/eclipse_step3.1.jpg"></img></div><br>
+### D. Execution du projet.
 
-3.2. Acceptez les conditions d'utilisation et validez votre téléchargement (il est possible que cette étape vous demande de vous connecter à un compte Oracle, si vous n'en avez pas, créez-en un).
+Félicitations, vous devriez avoir mis en place IntelliJ pour utiliser ce projet.
 
-> <br><div align="center"><img src="images/eclipse_step3.2.jpg"></img></div><br>
-
-3.3. Lancez l'installation du JRE.
-
-> <br><div align="center"><img src="images/eclipse_step3.3.jpg"></img></div><br>
-
-3.4. Patientez pendant l'installation.
-
-> <br><div align="center"><img src="images/eclipse_step3.4.jpg"></img></div><br>
-
-3.5. Fermez la fenêtre.
-
-> <br><div align="center"><img src="images/eclipse_step3.5.jpg"></img></div><br>
-
-4. **Enregistrement d'un nouveau JRE dans Eclipse :**
-
-4.1. Retournez dans les préférences de Eclipse (*Window* > *Preferences*).
-
-> <br><div align="center"><img src="images/eclipse_step4.1.jpg"></img></div><br>
-
-4.2. Allez dans *Installed JREs* et cliquez sur *Add ...*.
-
-> <br><div align="center"><img src="images/eclipse_step4.2.jpg"></img></div><br>
-
-4.3. Sélectionnez *Standard VM* et cliquez sur *Next >*.
-
-> <br><div align="center"><img src="images/eclipse_step4.3.jpg"></img></div><br>
-
-4.4. Dans *JRE home:*, entrez le chemin vers le répertoire d'installation de votre JRE, puis cliquez sur *Finish*.
-
-> <br><div align="center"><img src="images/eclipse_step4.4.jpg"></img></div><br>
-
-4.5. Cliquez sur *Apply and Close*.
-
-> <br><div align="center"><img src="images/eclipse_step4.5.jpg"></img></div><br>
-
-5. **Création d'un nouveau projet avec JavaFx :**
-
-5.1. Démarrez un nouveau projet (*File* > *New* > *Project...*).
-
-> <br><div align="center"><img src="images/eclipse_step5.1.jpg"></img></div><br>
-
-5.2. Sélectionnez *JavaFX*, puis *JavaFX Project* et cliquez sur *Next >*.
-
-> <br><div align="center"><img src="images/eclipse_step5.2.jpg"></img></div><br>
-
-5.3. Choisissez un nom pour votre projet. Cochez *Use a project specific JRE* puis selectionnez la version de JRE récemment installée. Finalement, cliquez sur *Finish*.
-
-> <br><div align="center"><img src="images/eclipse_step5.3.jpg"></img></div><br>
-
-5.4. Votre projet JavaFX devrait fonctionner correctement, sans erreurs :trophy: :trophy: :trophy:
-
-> <br><div align="center"><img src="images/eclipse_step5.4.jpg"></img></div><br>
-
-# Comment utiliser JavaFX sous IntelliJ ?
-
-1. Vérifier 
-
-1.1. Allez dans les paramètres de IntelliJ (*File* > *Settings...*).
-
-> <br><div align="center"><img src="images/intellij_step1.1.jpg"></img></div><br>
-
-1.2. Sélectionnez *Plugin* et vérifiez que *JavaFX* est bien coché dans les plugins installés. Si oui, fermez la fenêtre et passez à l'étape suivante, sinon, cochez la case correspondante et redémmarez IntelliJ.
-
-> <br><div align="center"><img src="images/intellij_step1.2.jpg"></img></div><br>
-
-2. **Installer un JDK approprié et démarrer un nouveau projet :**
-
-2.1. Commencez un nouveau projet (*File* > *New* > *Projet...*).
-
-> <br><div align="center"><img src="images/intellij_step2.1.jpg"></img></div><br>
-
-2.2. Sélectionnez *javaFX* sur la gauche. Dans *Project SDK:* Sélectionnez "Download JDK..."
-
-> <br><div align="center"><img src="images/intellij_step2.2.jpg"></img></div><br>
-
-2.3. Une nouvelle fenêtre s'affiche. Choisissez la version "1.8", sélectionnez un vendeur et cliquez sur *Download*.
-
-> <br><div align="center"><img src="images/intellij_step2.3.jpg"></img></div><br>
-
-2.4. Patientez le temps de l'installation. Vous pouvez la suivre en bas à droite de la fenêtre d'IntelliJ.
-
-> <br><div align="center"><img src="images/intellij_step2.4.jpg"></img></div><br>
-
-2.5. Quand l'installation est terminée, cliquez sur *Next*.
-
-> <br><div align="center"><img src="images/intellij_step2.5.jpg"></img></div><br>
-
-2.6. Nommez votre nouveau projet et cliquez sur *Finish*.
-
-> <br><div align="center"><img src="images/intellij_step2.6.jpg"></img></div><br>
-
-2.7. Votre projet JavaFX devrait fonctionner correctement, sans erreurs :trophy: :trophy: :trophy: (Quand vous créerez un nouveau projet, vous pourrez simplement sélectionner le JDK 1.8 déjà installé)
-
-> <br><div align="center"><img src="images/intellij_step2.7.jpg"></img></div><br>
+Essayez d'appuyer sur la touche F5 pour vérifier qu'une fenêtre (vide) s'affiche bien.
