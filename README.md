@@ -1,6 +1,6 @@
 Programmation Java @ Et3
 <br>
-Polytech Paris-Saclay | 2045-25
+Polytech Paris-Saclay | 2024-25
 
 ___
 
@@ -25,8 +25,8 @@ Instructions pour configurer IntelliJ ou VSCode pour programmer avec JavaFX.
 1. Allez dans *File* -> *Project Structure*.
 
 2. Renseignez :
-- *SDK* avec une version de Java (au moins 17, au plus 21) qui est sur votre machine.
-    Si aucune version de Java ne vous est proposé, faites *Download JDK*, sélectionnez comme *Version* 21, puis faites *Download*.  
+- *SDK* avec une version de Java 21 qui est sur votre machine.
+    Si aucune version de Java ne vous est proposée, faites *Download JDK*, sélectionnez comme *Version* 21, puis faites *Download*.  
 
 3. Faites *Apply*, puis *OK*.
 
@@ -42,7 +42,7 @@ Instructions pour configurer IntelliJ ou VSCode pour programmer avec JavaFX.
 
 5. Faites *OK*.
 
-### D. Execution du projet.
+### D. Exécution du projet.
 
 Félicitations, vous devriez avoir mis en place IntelliJ pour utiliser ce projet.
 
@@ -54,7 +54,7 @@ Essayez de cliquer sur l'icône Play en haut de l'écran pour vérifier qu'une f
 
 ### A. Téléchargement du projet.
 
-Procurez vous le repo git à cet adresse : https://github.com/kunchtler/TP1-squelette
+Procurez-vous le repo git à cette adresse : https://github.com/kunchtler/TP1-squelette
 - ou bien en utilisant git si vous savez faire.
 - ou bien en cliquant sur l'onglet vert *<> Code*, puis en faisant *Download ZIP*. Décompressez l'archive obtenue sur votre machine.
 
@@ -67,7 +67,7 @@ Procurez vous le repo git à cet adresse : https://github.com/kunchtler/TP1-sque
 
     1. Téléchargez l'archive "apache-maven-3.9.9-bin.zip" disponible [ici](https://maven.apache.org/download.cgi). 
 
-    2. Extrayez l'archive au bon endroit et ajoutez le chemin d'accès (typiquement `C:\Users\Username\...\apache-maven-3.9.9\bin`) dans la variable d'environement 'Path' (Menu Windows: 'Modifier les variables d'environnement système'>'Variables d'environnement'>'Path'>'Ajouter...').
+    2. Extrayez l'archive au bon endroit et ajoutez le chemin d'accès (typiquement `C:\Users\Username\...\apache-maven-3.9.9\bin`) dans la variable d'environnement 'Path' (Menu Windows : 'Modifier les variables d'environnement système'>'Variables d'environnement'>'Path'>'Ajouter...').
 
     3. Fermez et rouvrez VSCode. Vérifier l'installation dans le terminal avec la commande : 
     ``` 
@@ -88,17 +88,17 @@ Procurez vous le repo git à cet adresse : https://github.com/kunchtler/TP1-sque
 
 ### C. Configuration de VSCode.
 
-1. (A ne faire qu'une fois) Dans VSCode, installez et activez la suite de plugins dédiée à Java : [Extension pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
-Vous pouvez l'installer en cliquant sur l'icône avec 4 carrés dans la barre de gauche, et en tapant dans le champ de recherche des extensions : *Extension pack for Java*.
+1. (À ne faire que la première fois) Dans VSCode, installez et activez la suite de plugins dédiée à Java : [Extension pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+Vous pouvez l'installer en cliquant sur l'icône avec quatre carrés dans la barre de gauche, et en tapant dans le champ de recherche des extensions : *Extension pack for Java*.
 
 2. Ouvrez le projet en faisant *File* -> *Open Folder* et en choisissant le dossier où vous avez décompressé le TP.
 
 3. Cliquez sur l'icône d'engrenage en bas à gauche de l'écran, et faites *Command Palette*. Tapez et sélectionnez "Java: Configure Java Runtime".
 
-4. Il vous faut choisir dans JDK une version de Java (au moins 17, au plus 21). Si aucune version de Java n'est listée:
+4. Il vous faut choisir dans JDK une version de Java 21. Si aucune version de Java n'est listée :
     - Faites *Download a new JDK*
     - Choisissez la version 21, et faites *Download*. Une fenêtre de navigateur devrait s'ouvrir.
-    - Une fois el téléchargement terminé, décompressez l'archive quelque part sur votre machine.
+    - Une fois le téléchargement terminé, décompressez l'archive quelque part sur votre machine.
     - Revenez à la fenêtre de VSCode où choisir le SDK Java. Faites *Find a new local JDK*, et choisissez le chemin vers le dossier précédemment téléchargé.
 
 5. Faites *Apply Settings*.
