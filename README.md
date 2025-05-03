@@ -32,7 +32,7 @@ Instructions pour configurer IntelliJ ou VSCode pour programmer avec JavaFX.
 
 ### C. Configuration de l'outil de compilation Maven.
 
-1. Identifiez un fichier appelé "pom.xml" et faites clic droit dessus, et faites dans *Maven* -> *Reload project*.
+1. Identifiez un fichier appelé "pom.xml" et faites clic droit dessus, et faites dans *Maven* -> *Sync project*.
 
 2. Cliquez sur *Current File* en haut de l'écran, et faites *Edit configurations*.
 
