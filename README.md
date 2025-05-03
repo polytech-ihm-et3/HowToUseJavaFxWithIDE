@@ -16,7 +16,7 @@ Instructions pour configurer IntelliJ ou VSCode pour programmer avec JavaFX.
 1. Faites *New* -> *Project from version control*.
 
 2. Renseignez 
-- *URL* : l'adresse de ce repo git : https://github.com/kunchtler/TP1-squelette
+- *URL* : l'adresse du repo git du TP : https://github.com/polytech-ihm-et3/TP1_squelette
 - *Directory* : le répertoire où se situera le projet sur votre machine.
 
 3. Faites *Clone*.
@@ -54,7 +54,7 @@ Essayez de cliquer sur l'icône Play en haut de l'écran pour vérifier qu'une f
 
 ### A. Téléchargement du projet.
 
-Procurez-vous le repo git à cette adresse : https://github.com/kunchtler/TP1-squelette
+Procurez-vous le repo git à cette adresse : https://github.com/polytech-ihm-et3/TP1_squelette
 - ou bien en utilisant git si vous savez faire.
 - ou bien en cliquant sur l'onglet vert *<> Code*, puis en faisant *Download ZIP*. Décompressez l'archive obtenue sur votre machine.
 
